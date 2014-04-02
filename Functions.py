@@ -13,6 +13,9 @@ def conversions():
     print('Type of ' + str(f) + " = " + str(type(f)))
 
 def mathematics():
+    """Function that shows usage of some math functions.
+    For example, sine , square root, and power.
+    """
     d = 45
     r = math.pi*d/180
     s = math.sin(r)
