@@ -1,6 +1,10 @@
-import math
+import math # import a module object
+from math import pow # import a specific object from module
 
 def conversions():
+    '''Function that converts one data type to another.
+    For example, and string to int, and string to float.
+    '''
     s = '37'
     print('Type of ' + s + " = " + str(type(s)))
     i = int(s)
@@ -19,6 +23,10 @@ def mathematics():
     n = 19
     t = math.sqrt(n)
     print('The square root of %d is %.2f' % (n, t))
+    b = 2
+    e = 3
+    n = pow(b, e)
+    print('The number %d raised to the power %d is %d' % (b, e, n))
 
 if __name__ == '__main__':
     conversions()
