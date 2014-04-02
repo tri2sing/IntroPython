@@ -5,7 +5,12 @@ This repo contains code samples for an Introductory Python class that I offered 
 
 Sequence:
 
-  HelloWorld
-  Variables
-  Operators
-  Functions
+    HelloWorld
+
+    Variables
+
+    Operators
+
+    Functions
+
+    CmdLineArgs
