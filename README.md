@@ -11,6 +11,8 @@ Sequence:
 
     Operators
 
-    Functions
+    Functions01
 
     CmdLineArgs
+
+    Functions02

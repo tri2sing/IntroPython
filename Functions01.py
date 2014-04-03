@@ -2,7 +2,7 @@ import math # import a module object
 from math import pow # import a specific object from module
 
 def conversions():
-    '''Function that converts one data type to another.
+    '''Function that shows conversion of one data type to another.
     For example, and string to int, and string to float.
     '''
     s = '37'
