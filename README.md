@@ -23,6 +23,7 @@ Sequence:
 
     Functions01
 
+    Functions02
+
     CmdLineArgs
 
-    Functions02
