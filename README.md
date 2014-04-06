@@ -7,7 +7,7 @@ Behind the company firewall to use PyCharm.
 
 2) set http_proxy and https_proxy variables
 
-3) Launch "C:\Program Files (x86)\JetBrains\PyCharm Community Edition 3.1.1\bin\pycharm.exe" in the shelll
+3) Launch "C:\Program Files (x86)\JetBrains\PyCharm Community Edition 3.1.1\bin\pycharm.exe" in the shell
 
 4) Make sure PyCharm is set tp not use proxy
 
@@ -25,5 +25,13 @@ Sequence:
 
     Functions02
 
-    CmdLineArgs
+    Functions03
+
+    Loops
+
+    CmdLineArgs1
+
+    CmdLineArgs2
+
+
 
