@@ -19,6 +19,10 @@ The broad outline of course follows:
 
     Loops
 
+    Strings01
+
+    Strings02
+
     CmdLineArgs1
 
     CmdLineArgs2
