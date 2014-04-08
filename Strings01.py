@@ -1,4 +1,10 @@
 
+def skipper03(instr, step):
+    print(instr)
+    l = len(instr)
+    for i in range(0, l, step):
+        print(instr[i], end=' ')
+    print('\n')
 
 if __name__ == "__main__":
 
@@ -43,3 +49,6 @@ if __name__ == "__main__":
     print('\nTraversing a string using enumerate')
     for i, c in enumerate(dish):
         print("The %dth character is '%c'" % (i, c))
+
+    skipper03("Test string for skipper", 2)
+    skipper03("Test string for skipper", 3)
