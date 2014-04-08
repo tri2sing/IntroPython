@@ -24,4 +24,4 @@ if __name__ == '__main__':
     L5 = [L1[i] for i in range(len(L1)) if i%2==0]
     print(L5)
     L6 = [L1[i] for i in range(0, len(L1), 2)]
-    print(L6)
+    print("This is list 6: " + str(L6))
