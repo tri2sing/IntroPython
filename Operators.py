@@ -3,7 +3,7 @@ if __name__ == '__main__':
     b = 3
     print('Sum = ' + str(a+b))
     print('Divsion unformatted = ' + str(a/b))
-    print('Division formatted = %.3f' % (a/b))
+    print('Division formatted = %.3f for %.2d/%.2d' % (a/b, a, b))
     print('Divsion integer = ' + str(a//b))
 
     s = "Hello"

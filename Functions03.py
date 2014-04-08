@@ -20,6 +20,7 @@ def fibonacci (n):
         return None
     elif n < 0:
         print('Fibonacci is not defined for negative integers.')
+        return None
     elif n == 0:
         return 0
     elif n == 1:
@@ -30,3 +31,6 @@ def fibonacci (n):
 if __name__ == "__main__":
     print('The factorial of 7 = ' + str(factorial(7)))
     print('The fibonacci of 7 = ' + str(fibonacci(7)))
+    n = factorial(-1)
+    if n is None:
+        print('Something is wrong')
