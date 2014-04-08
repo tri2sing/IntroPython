@@ -33,7 +33,13 @@ The broad outline of course follows:
 
     Files
 
+    Dicts
 
+    Tuples
+
+    Sets
+
+    Classes
 
 Note:
 

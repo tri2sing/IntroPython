@@ -56,3 +56,7 @@ if __name__ == '__main__':
     # convert a string into list of words
     t2 = s.split()
     print(t2)
+
+    t3 = '1, 2, 3, 4, 5'
+    L4 = t3.split(sep=',')
+    print(L4)
