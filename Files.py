@@ -2,7 +2,7 @@ import argparse
 import sys
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument ('-f', '--file', required=True, help='name of the file to read/write/append')
     parser.add_argument ('-m', '--mode', choices=['r', 'w', 'a'], default='r', help='default size of each order')
     args = parser.parse_args()
