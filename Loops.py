@@ -26,6 +26,16 @@ def factorial_new(n):
 
     return result
 
+def skipper01(end, start=0, step=1):
+    for i in range(start, end, step):
+        print(i, end=' ')
+
+def skipper02(end, start=0, step=1):
+    i = start
+    while(i < end):
+        print(i, end=' ')
+        i = i + step
+
 if __name__ == "__main__":
     print("The square root of 4 = " + str(square_root(4)))
     print("The square root of 9 = " + str(square_root(9)))
@@ -33,4 +43,10 @@ if __name__ == "__main__":
     print("The factorial of 4 = " + str(factorial_new(4)))
     print("The factorial of 7 = " + str(factorial_new(7)))
     print("The factorial of 10 = %d " % factorial_new(10))
-
+    skipper01(10, 5, 2)
+    print('\n')
+    skipper02(13, 3, 3)
+    print('\n')
+    skipper01(8)
+    print('\n')
+    skipper02(7)
