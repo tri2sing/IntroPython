@@ -23,11 +23,16 @@ The broad outline of course follows:
 
     Strings02
 
+    Lists01
+
+    Lists02
+
     CmdLineArgs1
 
     CmdLineArgs2
 
     Files
+
 
 
 Note:
