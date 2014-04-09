@@ -42,8 +42,9 @@ if __name__ == '__main__':
 
     # Using the dictionary as a histogram
     counts = {}
-    s = "This is a string to test show the us of dictionaries"
-    for c in s:
+    s = "This is a string to test show us how to use dictionaries"
+#    for c in s: to count characters
+    for c in s.split():  # to count words
         if c not in counts:
             counts[c] = 1
         else:
@@ -65,3 +66,25 @@ if __name__ == '__main__':
     for key, value in counts.items():
         print("%s: %s" % (key, value))
 
+    numtodays = {}
+    numtodays[0] = 'Sunday'
+    numtodays[1] = 'Monday'
+    numtodays[2] = 'Tuesday'
+    numtodays[3] = 'Wednesday'
+    numtodays[4] = 'Thursday'
+    numtodays[5] = 'Friday'
+    numtodays[6] = 'Saturday'
+
+    # Assuming that the keys() and values() iterators
+    # will return matching key value in parallel
+    # And this works as long as you don't modify the dict in the interim
+    # Alternately use a for loop to build lists then zip
+    daystonum = dict(zip(numtodays.values(), numtodays.keys()))
+
+    print(numtodays)
+    print(daystonum)
+
+    today = "Tuesday"
+    tomorrow = numtodays[(daystonum[today]+1)%7]
+    print(today)
+    print(tomorrow)
