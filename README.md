@@ -45,16 +45,15 @@ The broad outline of course follows:
 
 Note:
 
+In case you do not want to have global environment variables for proxy setting.
+
 To have PyCharm communicate with https://github.com from behind the firewall.
 
-    1) Open up command shell
+    1) Launch a command shell
 
-    2) Set http_proxy and https_proxy environment variables
+    2) Set http_proxy and https_proxy environment variables in the shell
 
-    3) Launch a command shell
+    4) Launch PyCharm from  the shell where environment variables were set
 
-    4) Launch PyCharm from inside the shell
-
-    4) Ensure that PyCharm is set to not use proxy
-
+    4) Ensure that PyCharm settings do not use proxy
 
