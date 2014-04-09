@@ -33,11 +33,11 @@ The broad outline of course follows:
 
     Files
 
-    Dicts
+    Dictionaries01
+
+    Dictionaries02
 
     Tuples
-
-    Sets
 
     Classes
 
