@@ -39,6 +39,8 @@ The broad outline of course follows:
 
     Tuples
 
+    Sets
+
     Classes
 
 Note:
