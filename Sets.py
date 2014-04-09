@@ -1,7 +1,12 @@
 
 if __name__ == '__main__':
 
-    # create set
+    # Best use case for a set is to remove duplicates from data
+    # Especially if you merging data from different lists
+    # The creation of S1 and the printing is demonstrates the idea
+
+
+    # create set: unordered collection of unique items
     # empty set requires set() not {}, which is an empty dict
     S1 = set('abracadabras')
     S2 = set('openshazam')
@@ -14,10 +19,10 @@ if __name__ == '__main__':
     print('S3 = ' + str(S3))
     print('S4 = ' + str(S4))
 
-    print('S1 intersection S2 = ' + str(S1 & S2))
-    print('In S1 or in S2 but not both = ' + str(S1 ^ S2))
-    print('In S3 but not in S4 = ' + str(S3 - S4))
-    print('In S3 or in S4 = ' + str(S3 | S4))
+    print('S1 intersection S2 (intersection) = ' + str(S1 & S2))
+    print('In S1 or in S2 but not both (symmetric difference) = ' + str(S1 ^ S2))
+    print('In S3 but not in S4 (difference) = ' + str(S3 - S4))
+    print('In S3 or in S4 (union) = ' + str(S3 | S4))
 
     S1.add('z')
     print("S1 after adding 'z'= " + str(S1))
@@ -32,3 +37,4 @@ if __name__ == '__main__':
     print("S5 subset of S3 = " + str(S5 <= S3))
     print("S5 subset of S4 = " + str(S5 <= S4))
     print("S3 superset of S5 = " + str(S3 >= S5))
+
