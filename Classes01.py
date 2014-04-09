@@ -5,18 +5,18 @@ class Point:
 
     def __init__(self, x, y): #Constructor
         """Create a point"""
-        self.x = x
-        self.y = y
+        self.x = float(x)
+        self.y = float(y)
 
     def __str__(self):
         """Return the string representation of a point"""
         #print("Point __str__ called")
-        return "(%d, %d)" %(self.x, self.y)
+        return "(%f, %f)" %(self.x, self.y)
 
     def move(self, x, y):
         """Move a point by x units along x-axis and y units along y-axis"""
-        self.x += x
-        self.y += y
+        self.x += float(x)
+        self.y += float(y)
 
     def distance(self, other):
         if not isinstance(other, Point): raise TypeError
