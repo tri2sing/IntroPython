@@ -3,21 +3,23 @@ from math import pow, sqrt
 class Point:
     """A 2D point in space"""
 
-    def __init__(self, x, y):
+    def __init__(self, x, y): #Constructor
         """Create a point"""
         self.x = x
         self.y = y
 
     def __str__(self):
         """Return the string representation of a point"""
+        #print("Point __str__ called")
         return "(%d, %d)" %(self.x, self.y)
 
-    def translate(self, x, y):
-        """Translate a point along x and y axes"""
+    def move(self, x, y):
+        """Move a point by x units along x-axis and y units along y-axis"""
         self.x += x
         self.y += y
 
     def distance(self, other):
+        if not isinstance(other, Point): raise TypeError
         xdif = self.x - other.x
         ydif = self.y - other.y
         return sqrt(pow(xdif, 2) + pow(ydif, 2))
@@ -29,6 +31,8 @@ class Rectangle:
         """A rectangle defined by two points:
         1) left bottom point
         2) right top point"""
+        if not isinstance(lbp, Point): raise TypeError
+        if not isinstance(rtp, Point): raise TypeError
         self.lbp = lbp
         self.rtp = rtp
 
@@ -47,26 +51,21 @@ class Rectangle:
 
     def area(self):
         """Return the area of  the rectangle"""
-        #Class assignment
+        return self.width() * self.height()
 
-    def translate(self, x, y):
-        """Translate the rectangle along x and y axes"""
-        #Class assignment
-
-
-class Circle:
-    """A 2D circle in space"""
-    #Class assignment
-
+    def move(self, x, y):
+        """Move a rectangle by x units along x-axis and y units along y-axis"""
+        self.lbp.move(x, y)
+        self.rtp.move(x, y)
 
 if __name__ == '__main__':
     pt1 = Point(1, 2)
     pt2 = Point(1, 4)
     print('Point 1 = ' + str(pt1))
     print('Point 2 = ' + str(pt2))
-    print('Distance before translate = ' + str(pt1.distance(pt2)))
-    pt1.translate(0, 1)
-    print('Distance after translate = ' + str(pt1.distance(pt2)))
+    print('Distance before move = ' + str(pt1.distance(pt2)))
+    pt1.move(0, 1)
+    print('Distance after move = ' + str(pt1.distance(pt2)))
     print(pt1.distance(pt2))
     print('Distance of a point with itself = ' + str(pt1.distance(pt1)))
 
@@ -76,3 +75,7 @@ if __name__ == '__main__':
     print(rct1)
     print('Width = ' + str(rct1.width()))
     print('Height = ' + str(rct1.height()))
+    rct1.move(4, 3)
+    print("After move " + str(rct1))
+    print("Aread = " + str(rct1.area()))
+
