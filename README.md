@@ -43,6 +43,8 @@ The broad outline of course follows:
 
     Classes
 
+    Functional
+
 Note:
 
 In case you do not want to have global environment variables for proxy setting.
