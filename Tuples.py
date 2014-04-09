@@ -1,17 +1,22 @@
 
 if __name__ == '__main__':
     # Tuple is a comma-separated set of immutabe values
+    # position of values in the set is unique
     # Couple of representations: with and without parentheses
     t1 = 1, 2, 3, 4, 5
     t2 = ('a', 'b', 'c')
     print(t1)
     print(t2)
+    t6 = 1, 2, 3, 5, 4
+    print("t1 == t6 is " + str(t1 == t6))
 
     #Single element tuple creation requires comma
-    t3 = 1,
-    t4 = 'a',
-    t5 = tuple('tuples')
+    t3 = 1,  #without the comma Python will consider this one as an integer
+    t4 = 'a',   #without the comma Python will consider this one as a string
+    t7 = tuple([1])  # Need to send an iterable to the tuple() function
+    t5 = tuple('tuples') # Notice the quotes
     print(t5)
+    print(t7)
 
     #Accessing elements in a tuple
     print(t5[3])
@@ -53,3 +58,6 @@ if __name__ == '__main__':
     # Compare tuples
     print((0, 1, 20) < (0, 3, 10))
 
+    def retmultiple():
+        """Function that returns multiple values"""
+        return 'hello', 'world'
