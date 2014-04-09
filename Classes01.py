@@ -53,6 +53,12 @@ class Rectangle:
         """Translate the rectangle along x and y axes"""
         #Class assignment
 
+
+class Circle:
+    """A 2D circle in space"""
+    #Class assignment
+
+
 if __name__ == '__main__':
     pt1 = Point(1, 2)
     pt2 = Point(1, 4)
